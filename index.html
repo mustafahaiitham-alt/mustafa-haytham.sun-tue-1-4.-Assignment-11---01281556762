@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark p-5">
+    <div class="container">
+      <a class="navbar-brand d-flex" href="index.html">
+        <i class="fa-regular fa-cloud text-white" style="font-size: 40px;"></i>
+        <div>
+          <h5 class="mx-1 text-white mb-0">Weather</h5>
+          <p class="mx-1 my-0 text-white" style="font-size: 11px;">tagline goes here</p>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav gap-5">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white" href="#">News</a>
+          <a class="nav-link text-white" href="#">Live cameras</a>
+          <a class="nav-link text-white" href="#">Photo</a>
+          <a class="nav-link text-white" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="input-group mt-5 mb-3 position-relative">
+        <input type="text" class="form-control p-2" placeholder="Find your location" aria-label="Find your location"
+          aria-describedby="button-addon2" id="searchinput" />
+        <button class="btn btn-outline-secondary px-4" type="button" id="button-addon1">Find</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4">
+          <div class="card h-100">
+            <div class="card-header d-flex justify-content-between">
+              <h6 id="day"></h6>
+              <h6 id="date"></h6>
+            </div>
+            <div class="p-3 d-flex flex-column justify-content-center">
+              <h5 id="country"></h5>
+              <h1 id="weather" style="font-size: 80px;"></h1>
+              <div id="icon" class="my-3"></div>
+              <span id="condition" class="mb-3 h5"></span>
+              <div class="d-flex gap-2">
+                <span><i class="fa-solid fa-umbrella"></i> 20%</span>
+                <span><i class="fa-solid fa-wind"></i> 18km/h</span>
+                <span><i class="fa-solid fa-compass"></i> East</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card h-100">
+            <div class="card-header d-flex justify-content-between">
+              <h6>Day 2</h6>
+              <h6>Date</h6>
+            </div>
+            <div class="content p-5 d-flex flex-column justify-content-center align-items-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card h-100">
+            <div class="card-header d-flex justify-content-between">
+              <h6>Day 3</h6>
+              <h6>Date</h6>
+            </div>
+            <div class="content p-5 d-flex flex-column justify-content-center align-items-center">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer text-white py-5 mt-5">
+    <div class="container text-center">
+      <div class="d-flex flex-column align-items-center mb-4">
+        <div class="input-group subscribe-box w-50">
+          <input type="email" class="form-control" placeholder="Enter your email to subscribe" />
+          <button class="btn btn-subscribe" type="button">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="social-icons mb-4">
+        <a href="https://www.facebook.com/login/" class="mx-2"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.google.com/?zx=1762469730949&no_sw_cr=1" class="mx-2"><i
+            class="fa-brands fa-google-plus-g"></i></a>
+        <a href="https://www.pinterest.com/" class="mx-2"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+
+      <p class="small text-secondary mb-0">
+        Copyright © 2024 Company name. Designed by Themezy. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
+
